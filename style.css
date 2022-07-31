@@ -1,0 +1,70 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    border: 2px solid red;
+    justify-content: space-around;
+    padding: 10px 0px;
+}
+.list{
+    display: flex;
+    gap:20px;
+}
+.list span a{
+    text-decoration: none;
+    color:gray;
+}
+.list span a:hover{
+    color:black;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 30px;
+}
+.icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 30px;
+}
+.icons span a i{
+    font-size: 30px;
+    color: wheat;
+    padding: 10px 10px;
+}
+
+.icon1:hover,.icon2:hover,.icon3:hover{
+    background-color: rgb(159, 157, 157);
+    color: white;
+    
+}
+ 
+.icons span p{
+    display: none;
+}
+.icons:hover p{
+    display: block;
+}
+
+
+.search span input{
+    display: flex;
+    flex-direction: column;
+    border: none;
+    outline: none;
+    width: 250px;
+    padding: 10px 0px;
+    cursor: pointer;
+}
+.line{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 1px;
+    background-color: gray;
+}
