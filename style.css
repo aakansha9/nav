@@ -1,70 +1,116 @@
-*{
+* {
+    box-sizing: border-box;
     margin: 0%;
     padding: 0%;
 }
-.navbar{
+
+.contain{
+    width: 100%;
+    padding: 20px 50px;
+}
+
+.navbar {
     display: flex;
     align-items: center;
     border: 2px solid red;
-    justify-content: space-around;
-    padding: 10px 0px;
-}
-.list{
-    display: flex;
-    gap:20px;
-}
-.list span a{
-    text-decoration: none;
-    color:gray;
-}
-.list span a:hover{
-    color:black;
-}
-.nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    gap: 30px;
-}
-.icons{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    gap: 30px;
-}
-.icons span a i{
-    font-size: 30px;
-    color: wheat;
-    padding: 10px 10px;
+    justify-content: space-between;
 }
 
-.icon1:hover,.icon2:hover,.icon3:hover{
-    background-color: rgb(159, 157, 157);
-    color: white;
-    
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    /* border: 1px solid yellow; */
 }
- 
-.icons span p{
+.input-box {
+    padding: 5px 2px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0px 8px;
+}
+.in{
+    border: none;
+    outline: none;
+    padding: 2px 2px;
+}
+
+.list {
+    display: flex;
+    gap: 20px;
+}
+
+.list span a {
+    text-decoration: none;
+    color: gray;
+}
+
+.list span a:hover {
+    color: black;
+}
+
+
+.icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0px 30px;
+}
+
+.icons span a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    text-decoration: none;
+}
+.icons span{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pt-text{
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translate(-50% , 0%);
+    transition: all 0.3s linear;
+    font-size: 13px;
+    width: 90px;
+    text-align: center;
     display: none;
 }
-.icons:hover p{
+.icon1:hover > p{
+    display: block;
+    transition: all 0.9s linear;
+}
+.icon2:hover > p{
+    display: block;
+}
+
+.icon3:hover > p{
     display: block;
 }
 
 
-.search span input{
-    display: flex;
-    flex-direction: column;
-    border: none;
-    outline: none;
-    width: 250px;
-    padding: 10px 0px;
+
+.icons span a i {
+    font-size: 25px;
+    color: wheat;
     cursor: pointer;
+    transition: all 0.3s linear;
 }
-.line{
-    display: flex;
-    flex-direction: column;
-    width: 300px;
-    height: 1px;
-    background-color: gray;
+.icons span a i:hover{
+    color: blue;
+    transform: scale(1.1);
 }
+
+
+
+
+
+
